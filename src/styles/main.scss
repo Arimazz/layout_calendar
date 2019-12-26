@@ -34,5 +34,5 @@ div {
 .calendar > div:hover {
   bottom: 20px;
   background-color: pink;
-  transition: bottom 0.5s ease-in-out;
+  transform: translateY(-20px);
 }
