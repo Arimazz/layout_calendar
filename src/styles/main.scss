@@ -32,6 +32,7 @@ div {
 }
 
 .calendar > div:hover {
-  background-color: pink;
   bottom: 20px;
+  background-color: pink;
+  transition: bottom 0.5s ease-in-out;
 }
