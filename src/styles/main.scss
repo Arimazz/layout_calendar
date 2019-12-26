@@ -1,3 +1,37 @@
-body {
-  margin: 0;
+@import "reset-css";
+@import "calendar-item-mixin";
+
+$days: "mon", "tue", "wed", "thu", "fri", "sat", "sun";
+
+.calendar {
+  display: flex;
+  flex-wrap: wrap;
+  width: 707px;
+}
+
+div {
+  display: none;
+}
+
+@for $i from 28 to 31 {
+  .calendar-#{$i} > div:nth-child(-n+#{$i}) {
+    @include main-props;
+  }
+}
+
+@for $i from 1 to 31 {
+  .calendar > div:nth-child(#{$i})::before {
+    content: "#{$i}";
+  }
+}
+
+@for $i from 1 through 7 {
+  .calendar-#{nth($days, $i)} div:first-child {
+    margin-left: #{$i * 100 + $i - 100}px;
+  }
+}
+
+.calendar > div:hover {
+  background-color: pink;
+  bottom: 20px;
 }
