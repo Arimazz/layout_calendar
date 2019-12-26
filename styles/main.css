@@ -29,7 +29,9 @@ div {
   font-size: 30px;
   text-align: center;
   line-height: 100px;
-  margin: 0 0 1px 1px; }
+  margin: 0 0 1px 1px;
+  cursor: pointer;
+  bottom: 0; }
 
 .calendar-29 > div:nth-child(-n+29) {
   display: block;
@@ -44,7 +46,9 @@ div {
   font-size: 30px;
   text-align: center;
   line-height: 100px;
-  margin: 0 0 1px 1px; }
+  margin: 0 0 1px 1px;
+  cursor: pointer;
+  bottom: 0; }
 
 .calendar-30 > div:nth-child(-n+30) {
   display: block;
@@ -59,7 +63,9 @@ div {
   font-size: 30px;
   text-align: center;
   line-height: 100px;
-  margin: 0 0 1px 1px; }
+  margin: 0 0 1px 1px;
+  cursor: pointer;
+  bottom: 0; }
 
 .calendar > div:nth-child(1)::before {
   content: "1"; }
@@ -173,7 +179,9 @@ div {
   margin-left: 607px; }
 
 .calendar > div:hover {
+  bottom: 20px;
   background-color: pink;
-  bottom: 20px; }
+  -webkit-transition: bottom 0.5s ease-in-out;
+  transition: bottom 0.5s ease-in-out; }
 
 /*# sourceMappingURL=main.css.map */
